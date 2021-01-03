@@ -1,0 +1,33 @@
+{
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "parser": "babel-eslint",
+    "extends": "airbnb",
+    "plugins": [ "react-native" ],
+    "rules": {
+        "react/forbid-prop-types": 0,
+        "react/destructuring-assignment": 2,
+        "template-curly-spacing": 0,
+        "indent": 0,
+        "import/no-extraneous-dependencies": 0,
+        "prefer-destructuring": 2,
+        "object-curly-newline": 0,
+        "no-nested-ternary": 0,
+        "no-else-return": 0,
+        "operator-linebreak": 0,
+        "max-len": ["error", 80, 2, {
+            "ignoreUrls": true,
+            "ignoreComments": false,
+            "ignoreRegExpLiterals": true,
+            "ignoreStrings": true,
+            "ignoreTemplateLiterals": true
+        }]
+    },
+    "settings": {
+        "import/resolver": {
+            "babel-module": {}
+        }
+    }
+}
